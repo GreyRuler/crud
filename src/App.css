@@ -1,1 +1,55 @@
+.notes {
+    padding: 1rem;
+}
 
+.notes .header {
+    display: flex;
+    align-items: center;
+}
+
+.note-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.note-list > :not(:last-child) {
+    margin-right: 2rem;
+}
+
+.note-list .note {
+    position: relative;
+    padding: 2rem;
+    border: 1px solid black;
+    width: 300px;
+    margin-bottom: 2rem;
+}
+
+.note-list .note .content {
+    word-break: break-all;
+}
+
+.note-list .note .btn-remove {
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 50%;
+    padding: .25rem;
+}
+
+.note-form {
+    position: relative;
+    width: fit-content;
+}
+
+.note-form .btn-submit {
+    bottom: .5rem;
+    right: .5rem;
+    position: absolute;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 50%;
+    padding: .25rem;
+}
